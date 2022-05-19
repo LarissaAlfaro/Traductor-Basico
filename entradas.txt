@@ -1,0 +1,11 @@
+Expresiones válidas
+Expresión sencilla: 5+10
+Expresión  con todas las operaciones y con enteros: 56+834/23-13
+Expresión con todas las operaciones con decimales y enteros: 4.5+7*8.7-6/2-7
+Expresión con paréntesis, decimales, enteros y todas las operaciones: 7+9*(6-3)+(24.6/84.6*78)
+
+Expresiones no válidas.
+No se incia la expresión con un signo "/" o "*" : /9+4*7
+División entre 0
+Inserseción de letras
+Inserción de símbolos

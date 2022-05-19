@@ -1,0 +1,39 @@
+digraph{
+
+# Graph style
+"ordering"="out"
+"rankdir"="TD"
+
+#########
+# Nodes #
+#########
+
+"Add(Symbol('2'), Symbol('6'), Mul(Integer(-1), Symbol('4')), Mul(Integer(-1), Symbol('2'), Pow(Symbol('3'), Integer(-1))))_()" ["color"="black", "label"="Add", "shape"="ellipse"];
+"Symbol('2')_(0,)" ["color"="black", "label"="2", "shape"="ellipse"];
+"Symbol('6')_(1,)" ["color"="black", "label"="6", "shape"="ellipse"];
+"Mul(Integer(-1), Symbol('4'))_(2,)" ["color"="black", "label"="Mul", "shape"="ellipse"];
+"Integer(-1)_(2, 0)" ["color"="black", "label"="-1", "shape"="ellipse"];
+"Symbol('4')_(2, 1)" ["color"="black", "label"="4", "shape"="ellipse"];
+"Mul(Integer(-1), Symbol('2'), Pow(Symbol('3'), Integer(-1)))_(3,)" ["color"="black", "label"="Mul", "shape"="ellipse"];
+"Integer(-1)_(3, 0)" ["color"="black", "label"="-1", "shape"="ellipse"];
+"Symbol('2')_(3, 1)" ["color"="black", "label"="2", "shape"="ellipse"];
+"Pow(Symbol('3'), Integer(-1))_(3, 2)" ["color"="black", "label"="Pow", "shape"="ellipse"];
+"Symbol('3')_(3, 2, 0)" ["color"="black", "label"="3", "shape"="ellipse"];
+"Integer(-1)_(3, 2, 1)" ["color"="black", "label"="-1", "shape"="ellipse"];
+
+#########
+# Edges #
+#########
+
+"Add(Symbol('2'), Symbol('6'), Mul(Integer(-1), Symbol('4')), Mul(Integer(-1), Symbol('2'), Pow(Symbol('3'), Integer(-1))))_()" -> "Symbol('2')_(0,)";
+"Add(Symbol('2'), Symbol('6'), Mul(Integer(-1), Symbol('4')), Mul(Integer(-1), Symbol('2'), Pow(Symbol('3'), Integer(-1))))_()" -> "Symbol('6')_(1,)";
+"Add(Symbol('2'), Symbol('6'), Mul(Integer(-1), Symbol('4')), Mul(Integer(-1), Symbol('2'), Pow(Symbol('3'), Integer(-1))))_()" -> "Mul(Integer(-1), Symbol('4'))_(2,)";
+"Add(Symbol('2'), Symbol('6'), Mul(Integer(-1), Symbol('4')), Mul(Integer(-1), Symbol('2'), Pow(Symbol('3'), Integer(-1))))_()" -> "Mul(Integer(-1), Symbol('2'), Pow(Symbol('3'), Integer(-1)))_(3,)";
+"Mul(Integer(-1), Symbol('4'))_(2,)" -> "Integer(-1)_(2, 0)";
+"Mul(Integer(-1), Symbol('4'))_(2,)" -> "Symbol('4')_(2, 1)";
+"Mul(Integer(-1), Symbol('2'), Pow(Symbol('3'), Integer(-1)))_(3,)" -> "Integer(-1)_(3, 0)";
+"Mul(Integer(-1), Symbol('2'), Pow(Symbol('3'), Integer(-1)))_(3,)" -> "Symbol('2')_(3, 1)";
+"Mul(Integer(-1), Symbol('2'), Pow(Symbol('3'), Integer(-1)))_(3,)" -> "Pow(Symbol('3'), Integer(-1))_(3, 2)";
+"Pow(Symbol('3'), Integer(-1))_(3, 2)" -> "Symbol('3')_(3, 2, 0)";
+"Pow(Symbol('3'), Integer(-1))_(3, 2)" -> "Integer(-1)_(3, 2, 1)";
+}
